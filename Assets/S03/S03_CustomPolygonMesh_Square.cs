@@ -19,7 +19,10 @@
           // TODO 2: 정점 3개씩 묶어 삼각형들을 구성하세요
           int[] triangles = new int[]
           {
-              
+              0,2,1,
+              2,4,1,
+              2,5,1,
+              3,2,1
           };
 
           Mesh mesh = new Mesh();
