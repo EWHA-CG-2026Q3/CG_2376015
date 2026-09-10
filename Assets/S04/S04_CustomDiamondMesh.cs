@@ -20,21 +20,27 @@ public class S04_CustomDiamondMesh : MonoBehaviour
         // 힌트: 허리띠는 0→1→2→3→(다시 0) 순서로 이어짐
         int[] triangles = new int[]
         {
-            
             0,1,2,
             2,3,0,
             // 위쪽 4면 (정점 4 사용)
             0,4,1,
             1,4,2,
             2,4,3,
-            3,4,0
+            3,4,0,
             // 아래쪽 4면 (정점 5 사용)
+            0,1,5,
+            1,2,5,
+            //2,3,5,
+            //3,0,5
+            
+ 
         };
 
         Mesh mesh = new Mesh();
         mesh.vertices = vertices;
         mesh.triangles = triangles;
         mesh.RecalculateNormals();
+     
 
         GetComponent<MeshFilter>().mesh = mesh;
         GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
