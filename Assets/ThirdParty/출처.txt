@@ -1,0 +1,12 @@
+외부에서 받은 에셋 출처
+=======================
+
+[텍스처] — 전부 Pixabay (Pixabay Content License, 상업적 이용 및 수정 가능, 출처 표기 불요)
+
+금속.jpg  https://pixabay.com/ko/photos/2083986/   (화로 FireBowl, Ball_Mesh)
+용암.jpg  https://pixabay.com/ko/illustrations/656827/  (숯 Emission Map)
+나무.jpg  https://pixabay.com/   (Cube, 테이블)
+돌.jpg    https://pixabay.com/   (Sphere)
+천.jpg    https://pixabay.com/   (Capsule)
+
+[IGBlocks] 정자(Pavilion) 모델 — 수업 제공 에셋

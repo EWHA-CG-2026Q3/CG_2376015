@@ -1,9 +1,10 @@
 ﻿using UnityEngine;
 
+[ExecuteAlways]
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class S04_CustomDiamondMesh : MonoBehaviour
 {
-    void Start()
+    void OnEnable()
     {
         Vector3[] vertices = new Vector3[]
         {
@@ -40,7 +41,13 @@ public class S04_CustomDiamondMesh : MonoBehaviour
         mesh.RecalculateNormals();
      
 
-        GetComponent<MeshFilter>().mesh = mesh;
-        GetComponent<MeshRenderer>().sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        GetComponent<MeshFilter>().sharedMesh = mesh;
+        // 재질이 비어 있을 때만 기본 재질을 만든다.
+        // (이 조건이 없으면 내가 입힌 재질이 매번 덮어써져서 기본 재질로 되돌아감)
+        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        if (meshRenderer.sharedMaterial == null)
+        {
+            meshRenderer.sharedMaterial = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        }
     }
 }

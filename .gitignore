@@ -1,11 +1,41 @@
-   Library/
-   Temp/
-   Logs/
-   UserSettings/
-   .vs/
-   obj/
-   *.csproj
-   *.sln
-   *.user
-   *.suo
-   .vsconfig
+# ───────── Unity 자동 생성 폴더 (절대 커밋 금지) ─────────
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]ser[Ss]ettings/
+
+# ───────── 영상 (사이버캠퍼스 제출, GitHub 제외) ─────────
+Recordings/
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# ───────── IDE / 빌드 산출물 ─────────
+.vs/
+.vsconfig
+.idea/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+UpgradeLog.htm
+
+# ───────── OS / 크래시 ─────────
+.DS_Store
+Thumbs.db
+sysinfo.txt
+*.stackdump
