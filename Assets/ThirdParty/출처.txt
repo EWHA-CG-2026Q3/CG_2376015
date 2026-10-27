@@ -10,3 +10,14 @@
 천.jpg    https://pixabay.com/   (Capsule)
 
 [IGBlocks] 정자(Pavilion) 모델 — 수업 제공 에셋
+
+[S15 추가]
+Lava_Seamless.png / Lava_Seamless2.png
+  - 위 용암.jpg(Pixabay)를 이음매 없는(seamless) 텍스처로 가공한 것
+  - 가공 방식: 이미지를 가로세로 절반씩 밀어 원래 가장자리를 가운데로 옮긴 뒤,
+    가운데 생긴 이음매의 밝기 차를 주변으로 서서히 흡수시켜 지움 (RenderHub
+    Seamless Texture Generator와 동일한 원리)
+  - 사용처: 화로 안 용암 Quad (Mat_S15_SG_Lava)
+
+Assets/S15/Textures/Water1.png, Water2.png, Smoke.png
+  - 외부 에셋 아님. 직접 생성한 절차적(procedural) 텍스처라 S15 폴더에 둠
