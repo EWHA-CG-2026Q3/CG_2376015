@@ -1,0 +1,10 @@
+S25 자동 생성 완료
+
+Decal 기능 이미 있음: Assets/Settings/Mobile_Renderer.asset
+Decal 기능 이미 있음: Assets/Settings/PC_Renderer.asset
+파빌리온 앞쪽 끝 z = -6.77, 바닥 z 범위 -15.0 ~ 15.0
+Player의 SceneWalker를 껐습니다 (클릭할 때 화면이 돌지 않도록).
+실드 3개 생성 (Original / Mission A / Mission B), 스케일 0.625
+바닥 1개에 Trigger_OnDragSurface(켬) / Trigger_OnClickSurface(끔) 연결 -> DecalSpawner
+Reflection Probe Static 표시: 0개
+Reflection Probe Bake: 완료
