@@ -126,7 +126,7 @@ public static class S25Setup
         {
             GameObject go = new GameObject(SHIELD_NAMES[i]);
             go.transform.SetParent(shields, false);
-            go.transform.position = new Vector3(camPos.x + (i - 1) * 1.9f, groundY + 1.55f, frontZ - 3.4f);
+            go.transform.position = new Vector3(camPos.x - 1.2f + (i - 1) * 1.4f, groundY + 1.55f, frontZ - 3.4f);
             go.transform.rotation = Quaternion.Euler(0f, 180f, 0f);   // 수업 씬과 같은 방향(카메라 쪽을 봄)
             go.transform.localScale = Vector3.one * scale;
             go.AddComponent<MeshFilter>().sharedMesh = shieldMesh;
